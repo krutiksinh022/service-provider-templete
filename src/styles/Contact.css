@@ -1,0 +1,104 @@
+:root {
+    --first: white;
+    --second: #090c31;
+    --third: #5853ff;
+    --dark: rgb(44, 44, 44);
+}
+.contact-container{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--second);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-container{
+    height: 40rem;
+    width: 70%;
+    border-radius: 0px 200px 200px 0px;
+    padding: 3rem;
+    background-color: var(--first);
+}
+.contact-form{
+margin: 5rem;
+
+}
+.contact-heading{
+font-family: "Robot",sans-serif;
+}
+.form-get-details{
+margin-left: 10rem;
+width: 60%;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+}
+.form-get-details div{
+    margin-top: 2rem;
+}
+label{
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin: 1rem;
+    
+}
+input{
+    align-self: stretch;
+    height: 2rem;
+    margin-top: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid rgba(123, 123, 123, 0.6);
+    outline: none;
+    width: 100%;
+
+}
+.name-container{
+    display: flex;
+    width: 100%;
+}
+.email-container{
+    display: flex;
+    width: 100%;
+}
+.message-container{
+    display: flex;
+    width: 100%;
+}
+.send-button{
+    width: 15%;
+    background-color: var(--third);
+    border: none;
+    color: var(--first);
+    height: 2.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+@media screen and (max-width:400px){
+    .contact-heading{
+        margin-left: -7rem;
+        margin-top: -7rem;
+    }
+    .contact-form-container{
+        height: 22rem;
+        border-radius: 0 100px 100px 0;
+    }
+    .form-get-details{
+        margin-left: -8rem;
+    }
+    input{
+    align-self: stretch;
+    height: 2rem;
+    margin-top: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid rgba(123, 123, 123, 0.6);
+    outline: none;
+    width: 150px;
+    }
+    .send-button{
+        width: 165%;
+        margin-left: 16rem;
+        height: 2rem;
+    }
+
+}
